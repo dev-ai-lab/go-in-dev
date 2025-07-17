@@ -1,0 +1,43 @@
+HELP.md
+# Ignore Go binaries
+*.exe    # Windows executables
+*.dll    # Windows dynamic libraries
+*.so     # Shared objects (Linux/macOS)
+*.dylib  # macOS dynamic libraries
+*.test   # Go test binaries
+main
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+.mvn
+mvnw
+mvnw.cmd
+.DS_Store
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
