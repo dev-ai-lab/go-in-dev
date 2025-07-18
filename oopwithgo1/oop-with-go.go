@@ -15,4 +15,16 @@ func main() {
 	cards.saveToFile("my_cards.txt")                // Save the deck to a file
 	deckFromFile := newDeckFromFile("my_cards.txt") // Load the deck from a file (not implemented
 	fmt.Print(deckFromFile.toString())              // Print the loaded deck
+
+	ch := make(chan string) // create a channel
+
+	go sayHi(ch) // start goroutine
+
+	msg := <-ch // receive message
+	fmt.Println(msg)
+
+}
+
+func sayHi(ch chan string) {
+	ch <- "Hi from goroutine!" // send message to channel
 }
