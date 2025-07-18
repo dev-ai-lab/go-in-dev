@@ -26,5 +26,6 @@ func main() {
 }
 
 func sayHi(ch chan string) {
+	// This function runs in a separate goroutine. Time consuming task running in the background
 	ch <- "Hi from goroutine!" // send message to channel
 }
