@@ -1,5 +1,0 @@
-package oopwithgo
-
-func main() {
-
-}

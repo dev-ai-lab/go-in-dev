@@ -1,4 +1,4 @@
-# GO in Developing (go-in-dev) fast microservices
+# GO in Development (go-in-dev) fast microservices
 ---
 ## Python vs Go
 ### *Similarities Between Go and Python**
@@ -248,12 +248,6 @@ func (g Greeter) Greet() string {  // receiver: 'g' is like 'self'
     return "Hello, " + g.Name
 }
 ```
-
----
-
-Absolutely — let’s break down **methods in Go** as clearly as possible.
-
----
 
 ## Method in Go
 
